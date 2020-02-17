@@ -7,8 +7,12 @@ branches:
   only:
   - master
   - v7.6.0
-script: 
-  - ".\gradlew modules:ingest-user-agent:test"
+script:
+  - ./gradlew modules:reindex:test
+  - ./gradlew modules:percolator:test
+  - ./gradlew modules:ingest-geoip:test
+  - ./gradlew modules:rank-eval:test
+  - ./gradlew modules:ingest-user-agent:test
 deploy:
   provider: heroku
   api_key:
