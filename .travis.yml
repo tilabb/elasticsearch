@@ -30,3 +30,6 @@ script:
   - cd rank-eval
   - ../../gradlew test
   - echo 'Rank-eval tests success'
+  - cd ..
+  - cd ..
+  - .\gradlew modules:ingest-user-agent:test
