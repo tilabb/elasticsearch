@@ -36,18 +36,12 @@ plugins {
   id 'lifecycle-base'
   id 'elasticsearch.global-build-info'
   id "com.diffplug.gradle.spotless" version "3.24.2" apply false
-  id "com.gradle.build-scan" version "3.1.1"
 }
 
 apply plugin: 'nebula.info-scm'
 apply from: 'gradle/build-scan.gradle'
 apply from: 'gradle/build-complete.gradle'
 apply from: 'gradle/runtime-jdk-provision.gradle'
-
-buildScan {
-    termsOfServiceUrl = "https://gradle.com/terms-of-service"
-    termsOfServiceAgree = "yes"
-}
 
 // common maven publishing configuration
 allprojects {
