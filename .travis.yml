@@ -4,9 +4,6 @@ install: true
 
 dist: trusty
 jdk:
-  - oraclejdk8
-  - oraclejdk9
-  - openjdk8
   - openjdk13
   - openjdk-ea
 
