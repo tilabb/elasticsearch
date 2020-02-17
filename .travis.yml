@@ -7,7 +7,8 @@ branches:
   only:
   - master
   - v7.6.0
-script: ".\\gradlew modules:ingest-user-agent:test"
+script: 
+  ".\gradlew modules:ingest-user-agent:test"
 deploy:
   provider: heroku
   api_key:
