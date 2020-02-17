@@ -14,7 +14,7 @@ branches:
     
 
 script:
-  - ./gradlew :server:test --tests 'org.elasticsearch.modules.reindex.*'
-  - ./gradlew :server:test --tests 'org.elasticsearch.modules.percolator.*'
-  - ./gradlew :server:test --tests 'org.elasticsearch.modules.ingest-geoip.*'
-  - ./gradlew :server:test --tests 'org.elasticsearch.modules.rank-eval.*'
+  - ./gradlew test --tests 'org.elasticsearch.modules.reindex.*'
+  - ./gradlew test --tests 'org.elasticsearch.modules.percolator.*'
+  - ./gradlew test --tests 'org.elasticsearch.modules.ingest-geoip.*'
+  - ./gradlew test --tests 'org.elasticsearch.modules.rank-eval.*'
