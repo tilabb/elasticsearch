@@ -5,12 +5,7 @@ install: true
 dist: trusty
 jdk:
   - openjdk13
-  - openjdk-ea
 
-
-matrix:
-  allow_failures:
-    - jdk: openjdk-ea
 
 branches:
   only:
@@ -19,4 +14,7 @@ branches:
     
 
 script:
-  - ./gradlew --continue clean build --scan -s -p modules/
+  - ./gradlew :server:test --tests 'org.elasticsearch.modules.reindex.*'
+  - ./gradlew :server:test --tests 'org.elasticsearch.modules.percolator.*'
+  - ./gradlew :server:test --tests 'org.elasticsearch.modules.ingest-geoip.*'
+  - ./gradlew :server:test --tests 'org.elasticsearch.modules.rank-eval.*'
