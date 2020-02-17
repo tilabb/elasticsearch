@@ -13,7 +13,3 @@ script:
   - ./gradlew modules:ingest-geoip:test
   - ./gradlew modules:rank-eval:test
   - ./gradlew modules:ingest-user-agent:test
-deploy:
-  provider: heroku
-  api_key:
-    secure: jo+EBzF44RxzBdSyEuJ+icalOk4TamM6xo9fYapqRpzKG6OCp/by5BF3DkCCkvtrgNbhrNGcQuSO2EkdY4G8xaZD6EkPS6/AvDe3DqMW9NfKhTZGjsZK46ed1GgDKcl2XcUShZiPFEe7cDWvW3EIlF9ae/UGXGiSJLSG7g94O4xQKBIPA49V9rWsbd/HqBocrPzbNZaOHdOfRPGnccOc7Jyk8Yi2dQAttOQAhYGdmJHAemsSia3qnkNKX3Bi1eiUi+dbdb9M4sA7rUR91TaAckKazA7g34mA8go5PpPY9AuR326kBr1tMTwWFmzjf2dK7neN2N3wTCKEoBCpNufp9yicD1e3DKjJIuv3kQFSmSQnVeOQLHOzCPRtCiP4zNwTBZX1KrxBcXLQQfRMlP8SJ21nPhm/HaAuwOi0lr9+IDVJAsGLA/V930FrT+6BpiIpG0cxgRArimLrHh8A0P/Kc6BKDt5FC5IZgAFZC0U5aEEDS4IuqZXKquq2K/OW1G3tAtpbfgyz4eITKO+t+6Evr+MFANnHILhzQHMaNzIhqHvha3g3en5kTM/VPzXtWmFdl89hk414K/gEKes5yjgf/079sHiegGeThTO6vPk4N27cI9A30uIFjpiGR77sEkBIyn6o7F1NovOJ5YB58PWGlOuGJRDyO7gc4LOkjKip+jE=
