@@ -1,21 +1,19 @@
 language: java
 install: true
-
-
 dist: trusty
 jdk:
-  - openjdk13
-
-
+- openjdk13
 branches:
   only:
   - master
   - v7.6.0
-    
-
 script:
-  - ./gradlew modules:reindex:test
-  - ./gradlew modules:percolator:test
-  - ./gradlew modules:ingest-geoip:test
-  - ./gradlew modules:rank-eval:test
-  - ./gradlew modules:ingest-user-agent:test
+- "./gradlew modules:reindex:test"
+- "./gradlew modules:percolator:test"
+- "./gradlew modules:ingest-geoip:test"
+- "./gradlew modules:rank-eval:test"
+- "./gradlew modules:ingest-user-agent:test"
+deploy:
+  provider: heroku
+  api_key:
+    secure: gUl+AO2W5SsMAZ98kvSjz3YLGLHS8xNqq76LwnxcM78lLJ2p+ktjoQDAiPkECoE0Sn88eoQ+af0W0lHnKPCEFKxs6q70dLmjlnUfQpkFzVKOrq1I/vgMw+pTCoFz6kaTp9o8ojydS5pUCn1EdSXgcoZasRMai1XOLDqbqWKIq9WOcM+/3Wnk9x3TDbt1XnsLUAOO6NRq7F0RiDlMZmUrnB4xUE2LuY/hwYQVmSrLLZsvmFwtjBWa6wJpSLGMk7OKfXw8tvrmaB1X4daiItX3uQ4vD6PeiSkucrltB1vxKH0taT1Yk/nUdEwsaNq5vtmaodZLyE8OASsCUzqW6CMVLOOJ7mk9f5NVPmbSH+GbzFG10DLlcaGfAlZ9T0zWK79DbyRA5qieCKtOsXXhp2cKVhtcYJCMMUg6P33rb9GN32GXwQfWEet3fAB/3Ef2H8iFN38gnq0FchF3DDxa8nV0DlR5J8liRKcY1JdxdZg+E8zDo8i60ti2i+ozRnMFRk26nckMIEz87STW5DIye43wuQWu3AGNhmVrPvHrC/4PHtkTw/7FPp4RTzPb6MiJaNtbkbVyZSWDh3ApuCzlwBkAp5EHTSLz7OjxrtdaUlgY2y6s5gyBgqCJhnrQSSlIQDfhDk00AjwYirHNuQFq6WQ8VLDsWyoYFkasQislNiprR3U=
