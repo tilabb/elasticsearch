@@ -32,4 +32,4 @@ script:
   - echo 'Rank-eval tests success'
   - cd ..
   - cd ..
-  - .\gradlew modules:ingest-user-agent:test
+  - ./gradlew modules:ingest-user-agent:test
