@@ -14,22 +14,8 @@ branches:
     
 
 script:
-  - cd modules
-  - cd reindex
-  - ../../gradlew test
-  - echo 'Reindex tests success'
-  - cd ..
-  - cd percolator
-  - ../../gradlew test
-  - echo 'Percolator tests success'
-  - cd ..
-  - cd ingest-geoip
-  - ../../gradlew test
-  - echo 'Ingest-geoip tests success'
-  - cd ..
-  - cd rank-eval
-  - ../../gradlew test
-  - echo 'Rank-eval tests success'
-  - cd ..
-  - cd ..
+  - ./gradlew modules:reindex:test
+  - ./gradlew modules:percolator:test
+  - ./gradlew modules:ingest-geoip:test
+  - ./gradlew modules:rank-eval:test
   - ./gradlew modules:ingest-user-agent:test
