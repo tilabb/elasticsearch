@@ -12,4 +12,3 @@ script:
   - ./gradlew modules:percolator:test
   - ./gradlew modules:ingest-geoip:test
   - ./gradlew modules:rank-eval:test
-  - ./gradlew modules:ingest-user-agent:test
